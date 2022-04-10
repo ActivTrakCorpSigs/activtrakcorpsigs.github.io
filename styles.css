@@ -2,6 +2,7 @@ body {
     background-color: #f5f5f7;
     margin: 0 0 100px 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 img {
@@ -59,7 +60,6 @@ header {
     line-height: 30px;
     color: #333f48;
     font-weight: bold;
-    margin: 50px auto 15px auto;
     background-color: initial !important;
     text-align: center;
 }
@@ -83,11 +83,16 @@ h1 img {
 h1 span {
     font-size: 20px;
     line-height: 20px;
-    color: #333f48;
+    color: #f5f5f7;
     font-weight: bold;
     padding-left: 10px;
-    position: relative;
-    top: 3px;
+}
+
+div.button {
+  background: #147bd1;
+  display: block;
+  width: 100%;
+  margin: 50px auto 15px auto;
 }
 
 h2.unselect {
@@ -96,11 +101,8 @@ h2.unselect {
     text-align: left;
     color: #f5f5f7;
     font-weight: normal;
-    border-bottom: 2px solid #147bd1;
     cursor: pointer;
-    background: #147bd1;
-    padding: 5px 10px;
-    display: block;
+    padding: 10px 20px;
 }
 
 h2 span.primaryhead::after {
@@ -108,22 +110,26 @@ h2 span.primaryhead::after {
     width: 0;
     opacity: 0;
     font-weight: bold;
-    color: #70787e;
+    color: #f5f5f7;
     display: inline-block;
     transition: 0.3s;
 }
 
 h2:hover {
     transition: 0.1s;
-    color: #70787e;
-    border-bottom: 2px solid #70787e;
+    color: #333f48;
+}
+
+.button:hover {
+    transition: 0.1s;
+    background: #6cace4;
 }
 
 h2:hover span.primaryhead::after {
     content: "→";
     width: 30px;
     opacity: 1;
-    color: #70787e;
+    color: #333f48;
     display: inline-block;
     transition: 0.3s;
 }
@@ -131,7 +137,7 @@ h2:hover span.primaryhead::after {
 h2 .subhead {
     font-size: 18px;
     line-height: 28px;
-    color: #70787e;
+    color: #f5f5f7;
     position: relative;
     bottom: 3px;
     margin-left: 5px;
@@ -143,6 +149,18 @@ h2 .primaryhead {
 
 .dep-inner {
     display: none;
+}
+
+div.unselect {
+  padding: 50px 0 15px 0;
+}
+
+.dep-outer {
+  background: #c1c5c8;
+}
+
+.dep-inner {
+  width: 80%;
 }
 
 footer {
