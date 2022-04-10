@@ -64,6 +64,13 @@ header {
     text-align: center;
 }
 
+p, ol li {
+    font-family: 'sofia-pro', 'Roboto', 'Century Gothic', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333f48;
+}
+
 h1.unselect {
     text-align: center;
     margin: 0 auto;
