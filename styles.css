@@ -20,10 +20,17 @@ img {
     /* IE8+                */
 }
 
-section,
+section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 div,
 h1,
 h2,
+h3,
 iframe {
     width: 100%;
     max-width: 600px;
@@ -42,13 +49,20 @@ iframe {
     user-select: none;
 }
 
+p, ol li {
+    font-family: 'sofia-pro', 'Roboto', 'Century Gothic', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #333f48;
+}
+
 header {
     background-color: #ffffff;
     padding: 30px 0;
     border-bottom: 2px solid #147bd1;
 }
 
-.unselect {
+.unselect, h3 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -62,13 +76,6 @@ header {
     font-weight: bold;
     background-color: initial !important;
     text-align: center;
-}
-
-p, ol li {
-    font-family: 'sofia-pro', 'Roboto', 'Century Gothic', Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    color: #333f48;
 }
 
 h1.unselect {
@@ -95,11 +102,32 @@ h1 span {
     padding-left: 10px;
 }
 
+div.instructions, div.Signatures {
+  display: inline-block;
+  width: 50%;
+  max-width: 600px;
+  min-width: 300px;
+  vertical-align: top;
+  margin: 40px auto;
+  padding: 0 40px;
+  text-align: left;
+}
+
 div.button {
   background: #147bd1;
   display: block;
   width: 100%;
   margin: 50px auto 15px auto;
+}
+
+h2, h3 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+    color: #147bd1;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 10px 20px;
 }
 
 h2.unselect {
@@ -122,7 +150,7 @@ h2 span.primaryhead::after {
     transition: 0.3s;
 }
 
-h2:hover {
+h2.unselect:hover {
     transition: 0.1s;
     color: #333f48;
 }
