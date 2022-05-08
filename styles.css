@@ -194,6 +194,14 @@ div.unselect {
   background: #c1c5c8;
 }
 
+.instructions .dep-outer {
+  background: #ffffff;
+}
+.instructions .dep-inner {
+  padding: 20px 0;
+  width: 90%;
+}
+
 .dep-inner {
   width: 80%;
 }
