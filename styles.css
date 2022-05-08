@@ -108,9 +108,13 @@ div.instructions, div.Signatures {
   max-width: 600px;
   min-width: 300px;
   vertical-align: top;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 0 40px;
   text-align: left;
+}
+
+div.instructions {
+  margin: 40px auto;
 }
 
 div.button {
@@ -151,6 +155,11 @@ h2 span.primaryhead::after {
 }
 
 h2.unselect:hover {
+    transition: 0.1s;
+    color: #333f48;
+}
+
+h3:hover {
     transition: 0.1s;
     color: #333f48;
 }
